@@ -1,0 +1,517 @@
+/* Estilos generales */
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Estilos para la sección de inicio */
+
+
+.home-section {
+    background-image: url("/Grabado-laser-092.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1%; /* Ajusta el valor de padding para reducir el espacio vertical */
+    width: 100%
+    
+}
+
+.divider {
+    border-left: 1px solid #ccc; /* Añade un borde izquierdo de 1 píxel sólido de color gris claro */
+    padding-left: 20px; /* Añade espacio a la izquierda de la línea */
+}
+
+/* Centra verticalmente el contenido */
+.home-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+}
+
+/* Estilo para el botón de contacto */
+.btn-contact {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* Estilos para el mosaico de fotos */
+.wrapper {
+    background: #ddd;
+    color: #666;
+    font-family: "Roboto", sans-serif;
+  }
+  .wrapper img {
+    height: auto;
+    max-width: 100%;
+  }
+body .wrapper {
+    margin: 0 auto;
+    max-width: flex;
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+  }
+  body .wrapper h1,
+  body .wrapper h2 {
+    font-weight: 700;
+  }
+  body .wrapper h1 {
+    font-size: 2rem;
+    padding: 0 0 2rem;
+  }
+  body .wrapper h2 {
+    font-size: 1.5rem;
+    padding: 0 0 1rem;
+    width: 100%;
+  }
+  body .wrapper p {
+    margin: 0 0 2rem;
+  }
+  body .wrapper .gallery-container {
+    background: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 2rem;
+    padding: 2rem;
+  }
+  
+  .image-gallery {
+    margin: 0 -0.5rem;
+    width: 100%;
+  }
+  .image-gallery.masonry {
+    columns: 12.8rem;
+    column-gap: 1rem;
+    margin: 0;
+  }
+  .image-gallery.masonry a {
+    break-inside: avoid;
+    display: block;
+    margin: 0 0 1rem;
+  }
+  .image-gallery.masonry a:hover .gallery-image:before, .image-gallery.masonry a:focus .gallery-image:before {
+    opacity: 1;
+  }
+  .image-gallery.masonry a .gallery-image img {
+    display: block;
+  }
+  .image-gallery.masonry a .image-caption {
+    color: #777;
+    display: block;
+  }
+  .image-gallery.mosaic {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.5rem;
+  }
+  .image-gallery.mosaic a {
+    background-position: center center;
+    background-size: cover;
+    flex: auto;
+    height: 15vw;
+    margin: 0 0.5rem 1rem;
+    max-height: 10rem;
+  }
+  .image-gallery.mosaic a img {
+    height: 100%;
+    opacity: 0;
+  }
+
+
+
+
+
+/* Estilos para el footer */
+/* Estilos para la sección de información de contacto */
+.contact-info {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+.contact-info h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info p {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 10px;
+    color: #555; /* Color de texto para la información de contacto */
+}
+
+
+
+
+/* Estilos para la sección de productos */
+/* Estilos para el botón de Comprar */
+.btn-comprar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+/* Estilos para el contenido de la pantalla emergente */
+.modal-body {
+    text-align: center;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Estilos para el footer */
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer p {
+    margin: 0;
+}
+
+/* Estilos generales para botones */
+.btn {
+    background-color: #FF5733;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF814A;
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto en el footer */
+    padding: 30px 0; /* Espaciado interno en el footer */
+}
+
+footer h4 {
+    font-size: 1.5rem; /* Tamaño de fuente para encabezados en el footer */
+}
+
+/* Estilos para la lista de iconos de redes sociales */
+ul.list-inline {
+    list-style: none;
+    padding: 0;
+}
+
+ul.list-inline li {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre los iconos */
+    font-size: 24px; /* Tamaño de fuente de los iconos */
+}
+
+/* Estilos para el contenido de relleno */
+footer p {
+    margin-bottom: 10px; /* Espacio entre párrafos de información de contacto */
+}
+
+
+/* Estilos card */
+.about {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: all 0.2s ease;
+  }
+  .about .bg_links {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    backdrop-filter: blur(5px);
+    position: absolute;
+  }
+  .about .logo {
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+    background-image: url(https://rafaelalucas91.github.io/assets/codepen/logo_white.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+    opacity: 0.9;
+    transition: all 1s 0.2s ease;
+    bottom: 0;
+    right: 0;
+  }
+  .about .social {
+    opacity: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .about .social .icon {
+    width: 100%;
+    height: 100%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    display: flex;
+    transition: all 0.2s ease, background-color 0.4s ease;
+    opacity: 0;
+    border-radius: 100%;
+  }
+  .about .social.portfolio {
+    transition: all 0.8s ease;
+  }
+  .about .social.portfolio .icon {
+    background-image: url(https://rafaelalucas91.github.io/assets/codepen/link.svg);
+  }
+  .about .social.dribbble {
+    transition: all 0.3s ease;
+  }
+  .about .social.dribbble .icon {
+    background-image: url(https://rafaelalucas91.github.io/assets/codepen/dribbble.svg);
+  }
+  .about .social.linkedin {
+    transition: all 0.8s ease;
+  }
+  .about .social.linkedin .icon {
+    background-image: url(https://rafaelalucas91.github.io/assets/codepen/linkedin.svg);
+  }
+  .about:hover {
+    width: 105px;
+    height: 105px;
+    transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+  }
+  .about:hover .logo {
+    opacity: 1;
+    transition: all 0.6s ease;
+  }
+  .about:hover .social {
+    opacity: 1;
+  }
+  .about:hover .social .icon {
+    opacity: 0.9;
+  }
+  .about:hover .social:hover {
+    background-size: 28px;
+  }
+  .about:hover .social:hover .icon {
+    background-size: 65%;
+    opacity: 1;
+  }
+  .about:hover .social.portfolio {
+    right: 0;
+    bottom: calc(100% - 40px);
+    transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+  }
+  .about:hover .social.portfolio .icon:hover {
+    background-color: #698fb7;
+  }
+  .about:hover .social.dribbble {
+    bottom: 45%;
+    right: 45%;
+    transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+  }
+  .about:hover .social.dribbble .icon:hover {
+    background-color: #ea4c89;
+  }
+  .about:hover .social.linkedin {
+    bottom: 0;
+    right: calc(100% - 40px);
+    transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+  }
+  .about:hover .social.linkedin .icon:hover {
+    background-color: #0077b5;
+  }
+  
+  .wrapper1 {
+    width: 100vw;
+    margin: 0 auto;
+    height: 400px;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .wrapper {
+      height: 700px;
+    }
+  }
+  .content {
+    max-width: 1024px;
+    width: 100%;
+    padding: 0 4%;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .content {
+      padding-top: 100px;
+      flex-direction: column;
+    }
+  }
+  .card1 {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 250px;
+    background-color: #292929;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .icon {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    background: linear-gradient(90deg, #FF7E7E 0%, #FF4848 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+  }
+  
+  .material-icons.md-18 {
+    font-size: 18px;
+  }
+  
+  .material-icons.md-24 {
+    font-size: 24px;
+  }
+  
+  .material-icons.md-36 {
+    font-size: 36px;
+  }
+  
+  .material-icons.md-48 {
+    font-size: 48px;
+  }
+  
+  .card1 .title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  .card1 .text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .card1:hover {
+    height: 270px;
+  }
+  
+  .card1:hover .info {
+    height: 90%;
+  }
+  
+  .card1:hover .text {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 40px;
+  }
+  
+  .card1:hover .icon {
+    background-position: -120px;
+    transition: all 0.3s ease;
+  }
+  
+  .card1:hover .icon i {
+    background: linear-gradient(90deg, #FF7E7E, #FF4848);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }

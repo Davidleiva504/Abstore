@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlberStore - Tienda en Línea</title>
+    <!-- Agrega la hoja de estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tu hoja de estilos personalizada -->
+    <link rel="stylesheet" href="css.css">
+    <!-- Agrega FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Estilos personalizados -->
+</head>
+<body>
+     <!-- Barra de Navegación con Bootstrap -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">AlberStore</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Productos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="sublimado.html">Sublimación</a>
+                            <a class="dropdown-item" href="Serigrafia.html">Serigrafía</a>
+                            <a class="dropdown-item" href="GrabadoL.html">Grabado Láser</a>
+                            <a class="dropdown-item" href="mosaic.html">M</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Contenido de tu página de productos -->
+     <div class="container mt-5">
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Grabado-laser-092.png" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <p class="card-text">Precio: $XX.XX</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal" data-producto="Producto 1" data-imagen="producto1.jpg" data-descripcion="Descripción detallada del Producto 1." data-precio="$XX.XX">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Seligrafia.jpg" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <p class="card-text">Precio: $XX.XX</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal" data-producto="Producto 1" data-imagen="producto1.jpg" data-descripcion="Descripción detallada del Producto 1." data-precio="$XX.XX">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite este bloque para más productos -->
+        </div>
+    </div>
+
+    <!-- Pantalla emergente para mostrar detalles del producto -->
+    <div class="modal fade" id="producto1Modal" tabindex="-1" role="dialog" aria-labelledby="producto1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="producto1ModalLabel">Detalles del Producto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="detalle-titulo"></h2>
+                    <img id="detalle-imagen" src="" alt="">
+                    <p id="detalle-descripcion"></p>
+                    <p id="detalle-precio"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="agregarAlCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agrega tu código JavaScript personalizado -->
+    <script src="Js.js"></script>
+</body>
+</html>
