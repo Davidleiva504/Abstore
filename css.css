@@ -9,7 +9,7 @@
 
 /* Estilos para la barra de navegación */
 .navbar {
-    background-color: #333;
+    background-color: #137fd9;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -17,14 +17,13 @@
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-color: #fff;
+    background-color: #137fd9;
 }
 
 /* Estilos para la sección de inicio */
 
 
 .home-section {
-    background-image: url("/Grabado-laser-092.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
