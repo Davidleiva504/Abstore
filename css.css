@@ -9,6 +9,7 @@
 
 /* Estilos para la barra de navegación */
 .navbar {
+  background: linear-gradient(to right, #4d6de3, #203376);
     background-color: #333;
 }
 
@@ -34,6 +35,7 @@
     width: 100%
     
 }
+
 
 .divider {
     border-left: 1px solid #ccc; /* Añade un borde izquierdo de 1 píxel sólido de color gris claro */
@@ -230,6 +232,7 @@ body .wrapper {
 
 /* Estilos para el footer */
 footer {
+  background: linear-gradient(to right, #4d6de3, #203376);
     background-color: #333; /* Color de fondo del footer */
     color: #fff; /* Color del texto en el footer */
     padding: 30px 0; /* Espaciado interno en el footer */

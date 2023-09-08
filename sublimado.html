@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Estilos personalizados -->
 </head>
+
 <body>
-     <!-- Barra de Navegación con Bootstrap -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <style>
+        .home-section {
+    background-image: url("/Imagenes/sublimado/cabecera-que-es-la-sublimacion-2-1024x581.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(233, 124, 22);
+    padding: 1%; /* Ajusta el valor de padding para reducir el espacio vertical */
+    width: 100%
+    
+}
+.home-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+}
+    </style>
+    <!-- Barra de Navegación con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">AlberStore</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -26,7 +50,8 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Productos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -37,7 +62,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        
+
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
@@ -45,39 +70,118 @@
         </div>
     </nav>
 
-     <!-- Contenido de tu página de productos -->
-     <div class="container mt-5">
+    <section id="inicio" class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-4">Sublimado</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido de tu página de productos -->
+    <div class="container mt-5">
         <div class="row">
             <!-- Producto 1 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="Grabado-laser-092.png" class="card-img-top" alt="Producto 1">
+                    <img src="/Imagenes/sublimado/botes3.jpg" class="card-img-top" alt="Producto 1">
                     <div class="card-body">
                         <h5 class="card-title">Producto 1</h5>
                         <p class="card-text">Descripción del producto.</p>
                         <p class="card-text">Precio: $XX.XX</p>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal" data-producto="Producto 1" data-imagen="producto1.jpg" data-descripcion="Descripción detallada del Producto 1." data-precio="$XX.XX">Comprar</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal"
+                            data-producto="Producto 1" data-imagen="producto1.jpg"
+                            data-descripcion="Descripción detallada del Producto 1." data-precio="$XX.XX">Comprar</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card">
-                    <img src="Seligrafia.jpg" class="card-img-top" alt="Producto 1">
+                    <img src="/Imagenes/sublimado/olimpia.jpg" class="card-img-top" alt="Producto 2">
                     <div class="card-body">
                         <h5 class="card-title">Producto 2</h5>
                         <p class="card-text">Descripción del producto.</p>
                         <p class="card-text">Precio: $XX.XX</p>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal" data-producto="Producto 1" data-imagen="producto1.jpg" data-descripcion="Descripción detallada del Producto 1." data-precio="$XX.XX">Comprar</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal"
+                            data-producto="Producto 1" data-imagen="producto1.jpg"
+                            data-descripcion="Descripción detallada del Producto 1." data-precio="$XX.XX">Comprar</a>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/Imagenes/sublimado/botes1.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <p class="card-text">Precio: $XX.XX</p>
+
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal"
+                            data-producto="Producto 1" data-imagen="producto1.jpg"
+                            data-descripcion="Descripción detallada del Producto 1." data-precio="$XX.XX">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <br>
+                <div class="card">
+                    <img src="/Imagenes/sublimado/forro1.jpg" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <p class="card-text">Precio: $XX.XX</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal"
+                            data-producto="Producto 1" data-imagen="producto1.jpg"
+                            data-descripcion="Descripción detallada del Producto 1." data-precio="$XX.XX">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <br>
+                <div class="card">
+                    <img src="/Imagenes/sublimado/forro2.jpg" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <p class="card-text">Precio: $XX.XX</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal"
+                            data-producto="Producto 1" data-imagen="producto1.jpg"
+                            data-descripcion="Descripción detallada del Producto 1." data-precio="$XX.XX">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <br>
+                <div class="card">
+                    <img src="/Imagenes/sublimado/forro3.jpg" class="card-img-top" alt="Producto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <p class="card-text">Precio: $XX.XX</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#producto1Modal"
+                            data-producto="Producto 1" data-imagen="producto1.jpg"
+                            data-descripcion="Descripción detallada del Producto 1." data-precio="$XX.XX">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+
+
             <!-- Repite este bloque para más productos -->
         </div>
     </div>
 
     <!-- Pantalla emergente para mostrar detalles del producto -->
-    <div class="modal fade" id="producto1Modal" tabindex="-1" role="dialog" aria-labelledby="producto1ModalLabel" aria-hidden="true">
+    <div class="modal fade" id="producto1Modal" tabindex="-1" role="dialog" aria-labelledby="producto1ModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -94,13 +198,51 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="agregarAlCarrito()">Agregar al Carrito</button>
+                    <button type="button" class="btn btn-primary" onclick="agregarAlCarrito()">Agregar al
+                        Carrito</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Agrega tu código JavaScript personalizado -->
+    <!-- Footer -->
+    <footer class="container mt-4">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Información de Contacto</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Correo Electrónico: info@alberstore.com</p>
+                    <p>Dirección: 123 Calle Principal, Ciudad</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Síguenos en redes sociales:</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/albenstore1/"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a>-->
+                        <a href="https://www.instagram.com/albenstore/?hl=es"><i class="fab fa-instagram"></i></a>
+                        <!-- Agrega más iconos según tus redes sociales -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        &copy; 2023 AlberStore. Todos los derechos reservados.
+        </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Agrega los scripts de Bootstrap y tu script personalizado -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Tu script JavaScript personalizado -->
     <script src="Js.js"></script>
+
 </body>
+
 </html>
