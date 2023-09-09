@@ -22,3 +22,31 @@ document.querySelectorAll('.btn-primary').forEach(function (btn) {
         mostrarDetalleProducto(producto, imagen, descripcion, precio);
     });
 });
+
+// Obtener todos los botones con la clase "enviarWhatsApp"
+const buttons = document.querySelectorAll(".enviarWhatsApp");
+
+// Agregar un evento clic a cada botón
+buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+        const producto = this.getAttribute("data-producto");
+        const imagen = this.getAttribute("data-imagen");
+        const descripcion = this.getAttribute("data-descripcion");
+        const precio = this.getAttribute("data-precio");
+
+        // Reemplaza "NUMERODETELEFONO" con el número de teléfono de WhatsApp +504 98557819  
+        const numeroDeTelefono = "97477523";
+
+        // Construir el mensaje de WhatsApp con los datos del producto
+        const mensajeWhatsApp = `¡Hola! Estoy interesado en ${producto}. Descripción: ${descripcion}, Precio: ${precio}`;
+
+        // Codificar el mensaje para usarlo en el enlace de WhatsApp
+        const mensajeCodificado = encodeURIComponent(mensajeWhatsApp);
+
+        // Crear el enlace de WhatsApp
+        const url = `https://wa.me/${numeroDeTelefono}?text=${mensajeCodificado}`;
+
+        // Abrir WhatsApp en una nueva ventana o pestaña
+        window.open(url, "_blank");
+    });
+});
