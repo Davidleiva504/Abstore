@@ -25,11 +25,12 @@
 
 
 .home-section {
-    background-image: url("Imagenes/R.png");
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("Imagenes/R.png");
     color: #fff;
     padding: 1%; /* Ajusta el valor de padding para reducir el espacio vertical */
     width: 100%
