@@ -24,18 +24,30 @@
 /* Estilos para la sección de inicio */
 
 
+/* Estilos para la sección de inicio */
 .home-section {
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: url("Imagenes/R.png");
-    color: #fff;
-    padding: 1%; /* Ajusta el valor de padding para reducir el espacio vertical */
-    width: 100%
-    
+  position: relative; /* Agregamos posición relativa para que los elementos internos sean posicionados relativos a esta sección */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("Imagenes/R.png");
+  color: #fff;
+  padding: 1%; /* Ajusta el valor de padding para reducir el espacio vertical */
+  width: 100%;
 }
+
+/* Fondo semitransparente */
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según lo desees */
+}
+
+
 
 
 .divider {
@@ -68,14 +80,43 @@
     background-color: #0056b3;
 }
 
+/* Estilos para la sección de Historia */
+.historia-section {
+  background-color: #f8f8f8; /* Cambia el color de fondo según tu preferencia */
+  padding: 70px; /* Ajusta el espaciado interno */
+  border-radius: 20px; /* Agrega bordes redondeados */
+  margin: 40px; /* Espaciado externo */
+}
+
+.historia-section h2 {
+  font-size: 28px; /* Tamaño del título */
+  color: #333; /* Color del texto */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.historia-section p {
+  font-size: 16px; /* Tamaño del texto */
+  color: #666; /* Color del texto */
+}
+
+.historia-section .container {
+  max-width: 900px; /* Ancho máximo del contenedor */
+}
+
+.historia-section img {
+  max-width: 150%; /* La imagen no excederá el ancho del contenedor */
+  height: 110%; /* Se ajustará automáticamente la altura */
+  display: block; /* Elimina el espacio debajo de la imagen */
+  margin-top: 5px; /* Espaciado superior de la imagen */
+}
 
 
 
 /* Estilos para el mosaico de fotos */
 .wrapper {
-    background: #ddd;
-    color: #666;
-    font-family: "Roboto", sans-serif;
+    background: #06768a5a;
+    color: #000000;
+    border-radius: 20px; /* Agrega bordes redondeados */
   }
   .wrapper img {
     height: auto;
@@ -302,7 +343,7 @@ footer p {
     max-width: 300px;
     min-width: 200px;
     height: 250px;
-    background-color: #0f0064;
+    background-color: #3358e1;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
