@@ -50,3 +50,18 @@ buttons.forEach((button) => {
         window.open(url, "_blank");
     });
 });
+
+//envio de formulario contactanos
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const nombre = encodeURIComponent(document.getElementById("nombre").value);
+    const mensaje = encodeURIComponent(document.getElementById("mensaje").value);
+    const numeroDeTelefono = encodeURIComponent(document.getElementById("numeroDeTelefono").value);
+
+    const mensajeWhatsApp = `Hola, soy ${nombre}. Estoy interesado en: ${mensaje}`;
+    const url = `https://wa.me/${numeroDeTelefono}?text=${mensajeWhatsApp}`;
+
+    // Abre WhatsApp en una nueva ventana o pestaña
+    window.open(url, "_blank");
+});

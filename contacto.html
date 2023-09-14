@@ -13,7 +13,7 @@
     <!-- Barra de Navegación con Bootstrap -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="#">AlberStore</a>
+        <a href="./index.html"><img src="Logo2.png" alt="Logo de la página" width="80px" height="auto" href="./index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,14 +40,6 @@
     </div>
 </nav>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto y Redirección a WhatsApp</title>
-</head>
-<body>
     <h1>Formulario de Contacto</h1>
     <p>Completa el formulario y haz clic en el botón para enviar un mensaje a WhatsApp:</p>
     
@@ -59,34 +51,38 @@
         <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
 
         <!-- Reemplaza "NUMERODETELEFONO" con el número de teléfono de WhatsApp -->
-        <input type="hidden" id="numeroDeTelefono" name="numeroDeTelefono" value="NUMERODETELEFONO">
+        <input type="hidden" id="numeroDeTelefono" name="numeroDeTelefono" value="97936136">
 
         <button type="submit">Enviar a WhatsApp</button>
     </form>
 
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            const nombre = encodeURIComponent(document.getElementById("nombre").value);
-            const mensaje = encodeURIComponent(document.getElementById("mensaje").value);
-            const numeroDeTelefono = encodeURIComponent(document.getElementById("numeroDeTelefono").value);
-
-            const mensajeWhatsApp = `Hola, soy ${nombre}. Mi mensaje es: ${mensaje}`;
-            const url = `https://wa.me/${numeroDeTelefono}?text=${mensajeWhatsApp}`;
-
-            // Abre WhatsApp en una nueva ventana o pestaña
-            window.open(url, "_blank");
-        });
-    </script>
-</body>
-</html>
+    <footer class="container mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="footer-content-left"> <!-- Aquí agregaremos la información de contacto -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="footer-content-right"> <!-- Aquí agregaremos las redes sociales -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        &copy; 2023 AlberStore. Todos los derechos reservados.
+    </footer>
+    
+    
+    
+    
 
     <!-- Agrega los scripts de Bootstrap y tu script personalizado -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <!-- Tu script JavaScript personalizado -->
     <script src="Js.js"></script>
+    <script src="foot.js"></script>
 </body>
 </html>
